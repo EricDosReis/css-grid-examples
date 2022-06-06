@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+
+    <title>sizing grid items</title>
+  </head>
+
+  <body>
+    <style>
+      .grid {
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .grid-item--bigger {
+        background-color: var(--color-primary);
+        /* grid-column: span 2; */
+        /* grid-row: span 2; */
+      }
+    </style>
+
+    <main class="wrapper">
+      <h1 class="page-title">Sizing grid items</h1>
+
+      <div class="grid">
+        <!-- .grid-item{$}*13 -->
+      </div>
+    </main>
+  </body>
+</html>
