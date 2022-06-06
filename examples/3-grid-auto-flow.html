@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/base.css" />
 
-    <title>implicit vs explicit</title>
+    <title>grid-auto-flow</title>
   </head>
 
   <body>
@@ -16,16 +16,25 @@
         gap: var(--grid-gap);
         grid-template-columns: 100px 1fr;
         grid-template-rows: 30vh;
-        /* grid-auto-rows: 10vh; */
+        /* grid-auto-flow: column; */
         /* grid-auto-columns: 200px; */
       }
     </style>
 
     <main class="wrapper">
-      <h1 class="page-title">Implicit vs explicit</h1>
+      <h1 class="page-title">grid-auto-flow</h1>
 
       <div class="grid">
-        <!-- .grid-item{$}*3 -->
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
       </div>
     </main>
   </body>
