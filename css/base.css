@@ -80,3 +80,9 @@ h6 {
   font-weight: bold;
   padding: 1rem;
 }
+
+.page-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
