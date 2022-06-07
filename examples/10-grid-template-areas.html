@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+
+    <title>grid-template-areas</title>
+  </head>
+
+  <body>
+    <style>
+      .grid {
+        display: grid;
+        gap: var(--grid-gap);
+        /* grid-template-columns: 2fr 2fr 8fr; */
+        /* grid-template-rows: 10vh 90vh; */
+        /* grid-template-areas:
+          "header   header   header"
+          "menu-bar task-bar content"; */
+      }
+
+      .header {
+        /* grid-area: header; */
+      }
+    </style>
+
+    <main class="wrapper">
+      <h1 class="page-title"><code>grid-template-areas</code></h1>
+
+      <div class="grid">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item menu-bar">Menu bar</div>
+        <div class="grid-item task-bar">Task bar</div>
+        <div class="grid-item main-content">Main content</div>
+      </div>
+    </main>
+  </body>
+</html>
