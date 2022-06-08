@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+
+    <title>grid-auto-flow: dense</title>
+  </head>
+
+  <body>
+    <style>
+      .grid {
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-columns: repeat(8, 1fr);
+        /* grid-auto-flow: dense; */
+      }
+
+      .grid-item:nth-child(4n) {
+        /* grid-column: span 6; */
+      }
+
+      .grid-item:nth-child(7n) {
+        /* grid-column: span 4; */
+      }
+    </style>
+
+    <main class="wrapper">
+      <h1 class="page-title"><code>grid-auto-flow: dense<code></h1>
+
+      <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+        <div class="grid-item">17</div>
+        <div class="grid-item">18</div>
+        <div class="grid-item">19</div>
+        <div class="grid-item">20</div>
+        <div class="grid-item">21</div>
+        <div class="grid-item">22</div>
+        <div class="grid-item">23</div>
+        <div class="grid-item">24</div>
+        <div class="grid-item">25</div>
+        <div class="grid-item">26</div>
+        <div class="grid-item">27</div>
+        <div class="grid-item">28</div>
+        <div class="grid-item">29</div>
+        <div class="grid-item">30</div>
+      </div>
+    </main>
+  </body>
+</html>
