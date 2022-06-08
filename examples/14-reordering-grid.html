@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+
+    <title>reordering grid</title>
+  </head>
+
+  <body>
+    <style>
+      .grid {
+        display: grid;
+        gap: var(--grid-gap);
+        grid-template-columns: repeat(10, 1fr);
+      }
+
+      .logo {
+        /* grid-column: span 2; */
+      }
+
+      .nav {
+        /* grid-column: 3 / -1; */
+        /* order: 1; */
+      }
+
+      .content {
+        /* grid-column: 1 / -1; */
+        /* order: 2; */
+      }
+    </style>
+
+    <main class="wrapper">
+      <h1 class="page-title">Reordering grid</h1>
+
+      <div class="grid">
+        <div class="grid-item nav">Nav</div>
+        <div class="grid-item logo">Logo</div>
+        <div class="grid-item content">Content</div>
+      </div>
+    </main>
+  </body>
+</html>
