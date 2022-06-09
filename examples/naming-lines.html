@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/base.css" />
 
-    <title>naming lines</title>
+    <title>Naming lines</title>
   </head>
 
   <body>
@@ -14,14 +14,14 @@
       .grid {
         display: grid;
         gap: var(--grid-gap);
-        /* grid-template-columns: 1fr 2fr 1fr; */
-        /* grid-template-rows: repeat(10, auto); */
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: repeat(10, auto);
         /* grid-template-columns: [site-start] 1fr [content-start] 2fr [content-end] 1fr [site-end]; */
         /* grid-template-rows: [content-top] repeat(10, auto) [content-bottom]; */
       }
 
       .grid-item--highlight {
-        background-color: var(--color-primary);
+        background-color: var(--color-highlight);
         /* grid-column: 2; */
         /* grid-row: 1 / -1; */
         /* grid-column: content-start; */
@@ -33,7 +33,6 @@
       <h1 class="page-title">Naming lines</h1>
 
       <div class="grid">
-        <!-- .grid-item{$}*30 -->
         <div class="grid-item">1</div>
         <div class="grid-item">2</div>
         <div class="grid-item grid-item--highlight">3</div>
