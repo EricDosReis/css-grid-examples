@@ -100,10 +100,16 @@ h6 {
   background-color: var(--color-grey);
   border-radius: var(--border-radius);
   color: var(--color-gray-light);
+  display: grid;
+  align-items: center;
   font-size: 1.6rem;
   padding: 1rem;
   text-decoration: none;
   transition: opacity 150ms ease-in;
+}
+
+.navigation__link--highlight {
+  background-color: var(--color-highlight);
 }
 
 .navigation__link:focus,
