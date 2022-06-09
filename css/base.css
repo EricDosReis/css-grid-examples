@@ -1,4 +1,6 @@
 :root {
+  --border-radius: 0.4rem;
+
   --color-grey: #3d3444;
   --color-grey-light: #d9e0e8;
   --color-grey-dark: #0e141b;
@@ -73,7 +75,7 @@ h6 {
 
 .grid-item {
   background-color: var(--color-grey);
-  border-radius: 0.4rem;
+  border-radius: var(--border-radius);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -86,4 +88,25 @@ h6 {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.navigation {
+  display: grid;
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.navigation__link {
+  background-color: var(--color-grey);
+  border-radius: var(--border-radius);
+  color: var(--color-gray-light);
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-decoration: none;
+  transition: opacity 150ms ease-in;
+}
+
+.navigation__link:focus,
+.navigation__link:hover {
+  opacity: 0.75;
 }
