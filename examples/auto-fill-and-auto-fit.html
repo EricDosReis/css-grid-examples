@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+
+    <title>auto-fill and auto-fit</title>
+  </head>
+
+  <body>
+    <style>
+      .grid {
+        display: grid;
+        gap: var(--grid-gap);
+        /* grid-template-columns: repeat(auto-fill, 150px); */
+        /* grid-template-columns: repeat(auto-fit, 150px); */
+      }
+
+      .grid-item:last-child {
+        /* grid-column: auto / -1; */
+      }
+    </style>
+
+    <main class="wrapper">
+      <h1 class="page-title">
+        <code>auto-fill</code> and <code>auto-fit</code>
+      </h1>
+
+      <div class="grid">
+        <!-- <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div> -->
+
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+        <div class="grid-item">Item 5</div>
+        <div class="grid-item">Item 6</div>
+        <div class="grid-item">Item 7</div>
+        <div class="grid-item">Item 8</div>
+        <div class="grid-item">Item 9</div>
+        <div class="grid-item">Item 10</div>
+        <div class="grid-item">Item 11</div>
+        <div class="grid-item">Item 12</div>
+        <div class="grid-item">Item 13</div>
+        <div class="grid-item">Item 14</div>
+        <div class="grid-item">Item 15</div>
+        <div class="grid-item">Item 16</div>
+        <div class="grid-item">Item 17</div>
+        <div class="grid-item">Item 18</div>
+        <div class="grid-item">Item 19</div>
+        <div class="grid-item">Item 20</div>
+        <div class="grid-item">Item 21</div>
+        <div class="grid-item">Item 22</div>
+        <div class="grid-item">Item 23</div>
+        <div class="grid-item">Item 24</div>
+        <div class="grid-item">Item 25</div>
+        <div class="grid-item">Item 26</div>
+        <div class="grid-item">Item 27</div>
+        <div class="grid-item">Item 28</div>
+        <div class="grid-item">Item 29</div>
+        <div class="grid-item">Item 30</div>
+      </div>
+    </main>
+  </body>
+</html>
